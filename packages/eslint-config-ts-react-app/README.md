@@ -1,0 +1,21 @@
+# eslint-config-ts-react-app
+
+> Inspired by https://github.com/natterstefan/eslint-config-ns
+
+## Instalation
+
+Run the command bellow in your project
+
+```bash
+yarn add -D --peer @codemeistre/eslint-config-ts-react-app
+```
+
+## Usage
+
+Add the config to your `.eslintrc` file
+
+```json
+{
+  "extends": "ts-react-app"
+}
+```
