@@ -1,0 +1,41 @@
+name: Publish package
+on:
+  push:
+    paths:
+      - 'packages/**/package.json'
+
+jobs:
+  npm-publish:
+    name: Publish on NPM registry using `codemeistre-bot` user
+    runs-on: ubuntu-latest
+    if: "startsWith(github.event.head_commit.message, 'chore(release): ')"
+    env:
+      PACKAGES_PATH: 'packages'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 0
+
+      - id: manifest
+        run: echo "::set-output name=path::$( git diff-tree --relative="${PACKAGES_PATH}/" --no-commit-id --name-only -r ${{ github.sha }} | grep -m1 -E '/package.json$' )"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: 12.x
+          registry-url: https://registry.npmjs.org/
+      - name: "Publish only if package's name has '@codemeistre' scope"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          cd "./${PACKAGES_PATH}/$(dirname "${{ steps.manifest.outputs.path }}")"
+          pwd
+
+          package_name=$( jq --raw-output '"\(.name)"' package.json )
+          [[ "$package_name" =~ ^@codemeistre/ ]] || exit 1
+
+          yarn install
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+          npm publish --access public
