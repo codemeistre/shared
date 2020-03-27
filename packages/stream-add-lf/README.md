@@ -1,5 +1,8 @@
 # stream-add-lf
 
+[![npm](https://img.shields.io/npm/v/@codemeistre/stream-add-lf.svg)](https://www.npmjs.com/package/@codemeistre/stream-add-lf)
+[![npm](https://img.shields.io/npm/dt/@codemeistre/stream-add-lf.svg)](https://www.npmjs.com/package/@codemeistre/stream-add-lf)
+
 A small transform stream that adds line feed (`\n` or `\r\n`) after each line or only after JSON lines.
 
 ## Instalation

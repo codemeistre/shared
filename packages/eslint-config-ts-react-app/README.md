@@ -1,5 +1,8 @@
 # eslint-config-ts-react-app
 
+[![npm](https://img.shields.io/npm/v/@codemeistre/eslint-config-ts-react-app.svg)](https://www.npmjs.com/package/@codemeistre/eslint-config-ts-react-app)
+[![npm](https://img.shields.io/npm/dt/@codemeistre/eslint-config-ts-react-app.svg)](https://www.npmjs.com/package/@codemeistre/eslint-config-ts-react-app)
+
 > Inspired by https://github.com/natterstefan/eslint-config-ns
 
 ## Instalation
