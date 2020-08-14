@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+const path = require('path')
+const fs = require('fs')
+const git = require('simple-git')
+
+const PACKAGES_DIR_NAME = path.join(__dirname, './packages')
+
+const MANIFEST_FILENAME = 'package.json'
+
+const [, , packageDirName] = process.argv
+
+if (!packageDirName) {
+  throw new Error('Require a package directory name!')
+}
+
+const packageDir = path.join(PACKAGES_DIR_NAME, packageDirName)
+
+const manifestFilePath = path.join(PACKAGES_DIR_NAME, packageDirName, MANIFEST_FILENAME)
+
+const manifest = JSON.parse(fs.readFileSync(manifestFilePath, 'utf-8'))
+
+const packageNameOnly = manifest.name.split('/', 2)[1]
+
+git()
+  .add(packageDir)
+  .commit(`chore(release): ${packageNameOnly}@v${manifest.version}`)
