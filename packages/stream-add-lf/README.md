@@ -8,11 +8,11 @@ A small transform stream that adds line feed (`\n` or `\r\n`) after each line or
 ## Instalation
 
 ```bash
-# or using NPM
-npm i -g stream-add-lf
+# using NPM
+npm i -g @codemeistre/stream-add-lf
 
-# using Yarn
-yarn add -g stream-add-lf
+# or using Yarn
+yarn global add @codemeistre/stream-add-lf
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ node your-app.js | stream-add-lf #[OPTION]...
 | ----------------- | --------- | ------- | ------------------------------------------------------------- |
 | `--version`, `-v` | `boolean` | -       | Show this package's version and exit.                         |
 | `--all, -A`       | `boolean` | `false` | Add **LF** (or **CRLF** if using with `-F`) after every line. |
-| `--crlf, -F`      | `boolean` | `false` | Use **CRLF** line endings instead of LF line endings.         |
+| `--crlf, -F`      | `boolean` | `false` | Use **CRLF** (`\r\n`) line endings instead of LF (`\n`).      |
 
 ## License
 
