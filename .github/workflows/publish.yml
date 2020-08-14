@@ -36,6 +36,9 @@ jobs:
           package_name=$( jq --raw-output '"\(.name)"' package.json )
           [[ "$package_name" =~ ^@codemeistre/ ]] || exit 1
 
-          yarn install
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+          yarn install --frozen-lock-file
+
+          echo "@codemeistre:registry=https://registry.npmjs.org/" > ~/.npmrc
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" >> ~/.npmrc
+
           npm publish --access public
