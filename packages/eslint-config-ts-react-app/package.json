@@ -1,6 +1,6 @@
 {
   "name": "@codemeistre/eslint-config-ts-react-app",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "ESLint config ready to be used in CodeMeistre React Apps projects. Includes TypeScript and Prettier configs out of the box.",
   "author": "Micael Levi Lima Cavalcante <mllc@icomp.ufam.edu.br>",
   "license": "MIT",
@@ -15,7 +15,8 @@
   },
   "maintainers": [
     "Micael Levi Lima Cavalcante <mllc@icomp.ufam.edu.br>",
-    "David Braga Fernandes de Oliveira <david@icomp.ufam.edu.br>"
+    "David Braga Fernandes de Oliveira <david@icomp.ufam.edu.br>",
+    "José Ricardo Sampaio Coutinho <ricardo.coutinho@icomp.ufam.edu.br>"
   ],
   "repository": {
     "type": "git",
@@ -41,27 +42,27 @@
     "eslint-plugin-jest": "23.x",
     "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-react": "7.x",
-    "typescript": "~3.7.2",
     "eslint-plugin-react-hooks": "2.x",
-    "prettier": "1.x"
+    "prettier": "1.x",
+    "typescript": "~3.7.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.10.0",
-    "@typescript-eslint/parser": "^2.10.0",
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
+    "@typescript-eslint/parser": "^3.9.0",
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-config-react-app": "^5.2.0",
-    "eslint-import-resolver-typescript": "^2.0.0",
-    "eslint-plugin-flowtype": "^4.6.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-import-helpers": "^1.0.2",
-    "eslint-plugin-jest": "^23.8.0",
-    "eslint-plugin-jsx-a11y": "6.x",
-    "typescript": "~3.7.2",
-    "eslint-plugin-react": "^7.18.0",
-    "eslint-plugin-react-hooks": "^2.5.0",
-    "prettier": "1.19.1"
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-import-resolver-typescript": "^2.2.1",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-import-helpers": "^1.1.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "prettier": "2.0.5",
+    "typescript": "~3.9.7"
   }
 }

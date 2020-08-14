@@ -10,6 +10,10 @@
 Run the command bellow in your project
 
 ```bash
+# using NPM
+npm install -D @codemeistre/eslint-config-ts-react-app
+
+# or using Yarn
 yarn add -D --peer @codemeistre/eslint-config-ts-react-app
 ```
 
