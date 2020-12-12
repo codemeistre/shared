@@ -1,6 +1,6 @@
 {
   "name": "@codemeistre/eslint-config-ts-react-app",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "ESLint config ready to be used in CodeMeistre React Apps projects. Includes TypeScript and Prettier configs out of the box.",
   "author": "Micael Levi Lima Cavalcante <mllc@icomp.ufam.edu.br>",
   "license": "MIT",
