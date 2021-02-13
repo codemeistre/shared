@@ -12,30 +12,30 @@
   },
   "scripts": {
     "commit": "git-cz",
-    "unsafe-commit": "HUSKY_SKIP_HOOKS=1 git-cz",
-    "pre-commit": "lint-staged",
+    "unsafe-commit": "HUSKY=0 git-cz",
     "lint": "eslint . --ext ts,js",
-    "lint:fix": "eslint --fix . --ext ts,js"
+    "lint:fix": "eslint --fix . --ext ts,js",
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.9.1",
-    "@typescript-eslint/parser": "^4.9.1",
-    "commitizen": "^4.1.2",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "commitizen": "^4.2.3",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.6.0",
     "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-config-prettier": "^7.0.0",
+    "eslint-config-prettier": "^7.2.0",
     "eslint-import-resolver-typescript": "^2.2.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-import-helpers": "^1.1.0",
     "eslint-plugin-json": "^2.1.2",
-    "eslint-plugin-prettier": "^3.1.4",
-    "husky": "^4.3.5",
-    "lint-staged": "^10.5.3",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.0.5",
-    "simple-git": "^2.27.0"
+    "simple-git": "^2.34.2"
   },
   "config": {
     "commitizen": {
