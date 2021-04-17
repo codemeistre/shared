@@ -11,7 +11,7 @@
     "yarn": ">=1.21.0 <2.0.0"
   },
   "scripts": {
-    "commit": "git-cz",
+    "unsafe-git": "HUSKY=0 git",
     "unsafe-commit": "HUSKY=0 git-cz",
     "lint": "eslint . --ext ts,js",
     "lint:fix": "eslint --fix . --ext ts,js",
@@ -35,7 +35,7 @@
     "husky": "^5.0.9",
     "lint-staged": "^10.5.4",
     "prettier": "^2.0.5",
-    "simple-git": "^2.34.2"
+    "simple-git": "^2.38.0"
   },
   "config": {
     "commitizen": {
