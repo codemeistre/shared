@@ -1,17 +1,28 @@
 #!/usr/bin/env node
+// ##
+// #% SYNOPSIS
+// #%    commit-bump-package <package_to_update>
+// #% DESCRIPTION
+// #%    Script to stage and commit a bump message update of some package living under `packages`.
+// #%
+// #% AUTHOR
+// #%    Micael Levi L. C.
+// #% COPYRIGHT
+// #%    Copyright © 2021 CodeMeistre.
+// ##
 
 const path = require('path')
 const fs = require('fs')
 const git = require('simple-git')
 
-const PACKAGES_DIR_NAME = path.join(__dirname, './packages')
+const PACKAGES_DIR_NAME = path.join(__dirname, 'packages')
 
 const MANIFEST_FILENAME = 'package.json'
 
 const [, , packageDirName] = process.argv
 
 if (!packageDirName) {
-  throw new Error('Require a package directory name!')
+  throw new Error('Require a package directory name (living under `packages` directory)!')
 }
 
 const packageDir = path.join(PACKAGES_DIR_NAME, packageDirName)
@@ -20,10 +31,12 @@ const manifestFilePath = path.join(PACKAGES_DIR_NAME, packageDirName, MANIFEST_F
 
 const manifest = JSON.parse(fs.readFileSync(manifestFilePath, 'utf-8'))
 
-const packageNameOnly = manifest.name.split('/', 2)[1]
+const [, packageNameOnly] = manifest.name.split('/', 2)
 
 process.env.HUSKY = '0'
 
+const commitMsg = `chore(release): ${packageNameOnly}@v${manifest.version}`
 git()
   .add(packageDir)
-  .commit(`chore(release): ${packageNameOnly}@v${manifest.version}`)
+  .commit(commitMsg)
+console.debug('Commit all on "%s" with the message "%s"', packageDir, commitMsg)
