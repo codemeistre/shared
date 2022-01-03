@@ -25,7 +25,6 @@ module.exports = {
     /* ==================== Dealing with JavaScript files ==================== */
     {
       files: ['*.js'],
-      parser: 'babel-eslint',
       extends: ['airbnb-base', 'plugin:prettier/recommended'],
 
       plugins: ['import', 'eslint-plugin-import-helpers'],
@@ -67,7 +66,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
         'plugin:prettier/recommended',
-        'prettier/@typescript-eslint',
+        'prettier',
       ],
 
       plugins: ['import', '@typescript-eslint'],
