@@ -1,0 +1,16 @@
+{
+  "name": "@codemeistre/noop",
+  "description": "No Operation: This package does nothing.",
+  "version": "0.0.1",
+  "author": "Micael Levi Lima Cavalcante <mllc@icomp.ufam.edu.br>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codemeistre/shared.git",
+    "directory": "noop"
+  },
+  "bugs": {
+    "url": "https://github.com/codemeistre/shared/issues"
+  },
+  "homepage": "https://github.com/codemeistre/shared/tree/master/packages/noop"
+}
