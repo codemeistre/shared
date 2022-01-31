@@ -1,5 +1,6 @@
 {
   "name": "@codemeistre/noop",
+  "main": "index.js",
   "description": "No Operation: This package does nothing.",
   "version": "0.0.1",
   "author": "Micael Levi Lima Cavalcante <mllc@icomp.ufam.edu.br>",

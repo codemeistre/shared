@@ -16,7 +16,7 @@ But you don't want this package because you know that it just display AD in your
 
 ### NPM
 
-If you're using NPM v8, you can override that package by another one using the [overrides feature](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides) along with [URLs as dependencies feature](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#urls-as-dependencies) by adding this entry to your `package.json`:
+If you're using NPM v8, you can override that package by another one using the [overrides feature](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides) along with [URLs as dependencies feature](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#urls-as-dependencies) (which requires Git) by adding this entry to your `package.json`:
 
 ```
 "overrides": {
