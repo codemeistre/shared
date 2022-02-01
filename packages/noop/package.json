@@ -2,7 +2,7 @@
   "name": "@codemeistre/noop",
   "main": "index.js",
   "description": "No Operation: This package does nothing.",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "author": "Micael Levi Lima Cavalcante <mllc@icomp.ufam.edu.br>",
   "license": "MIT",
   "repository": {
