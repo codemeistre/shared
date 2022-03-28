@@ -7,11 +7,6 @@
 
   "eslint.workingDirectories": ["packages/*"],
   "eslint.enable": true,
-  "eslint.options": {
-    "editor.rulers": {
-      "no-debugger": "always"
-    }
-  },
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
 
   "editor.codeActionsOnSave": {
