@@ -13,6 +13,7 @@
   "scripts": {
     "unsafe-git": "HUSKY=0 git",
     "unsafe-commit": "HUSKY=0 git-cz",
+    "format": "prettier --write .",
     "lint": "eslint . --ext ts,js",
     "lint:fix": "eslint --fix . --ext ts,js",
     "postinstall": "husky install"
