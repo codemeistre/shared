@@ -1,7 +1,7 @@
 {
   "name": "@codemeistre/stream-add-lf",
   "description": "A small transform stream that adds line feed after each line or only after JSON lines.",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": "Micael Levi Lima Cavalcante <mllc@icomp.ufam.edu.br>",
   "license": "MIT",
   "bin": {
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codemeistre/shared.git",
-    "directory": "stream-add-lf"
+    "directory": "packages/stream-add-lf"
   },
   "bugs": {
     "url": "https://github.com/codemeistre/shared/issues"

@@ -2,13 +2,13 @@
   "name": "@codemeistre/noop",
   "main": "index.js",
   "description": "No Operation: This package does nothing.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Micael Levi Lima Cavalcante <mllc@icomp.ufam.edu.br>",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codemeistre/shared.git",
-    "directory": "noop"
+    "directory": "packages/noop"
   },
   "bugs": {
     "url": "https://github.com/codemeistre/shared/issues"
