@@ -1,6 +1,6 @@
 {
   "name": "@codemeistre/type-guards",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Common type guards for TypeScript projects.",
   "author": "Micael Levi Lima Cavalcante <mllc@icomp.ufam.edu.br>",
   "license": "MIT",
