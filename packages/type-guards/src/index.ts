@@ -27,6 +27,13 @@ export const isNullOrUndefined = <T>(value: T | null | undefined): value is null
   isNull(value) || isUndefined(value);
 
 /**
+ *
+ * @param value
+ * @returns `true` if the `value` is an empty array, i.e., `value.length === 0`. `false` otherwise
+ */
+export const isEmptyArray = <T extends Array<unknown>>(value: T): boolean => value.length === 0;
+
+/**
  * Following https://nodejs.org/api/util.html#util_util_isnumber_object
  * @param value
  * @returns `true` if `value` has the type of `number`. `false` otherwise.

@@ -3,6 +3,7 @@ import * as assert from 'uvu/assert';
 import {
   isBoolean,
   isConstructor,
+  isEmptyArray,
   isNull,
   isNullOrUndefined,
   isNumber,
@@ -58,6 +59,14 @@ test('isNull(value)', () => {
 test('isNullOrUndefined(value)', () => {
   assert.is(isNullOrUndefined(null), true);
   assert.is(isNullOrUndefined(undefined), true);
+});
+
+test('isEmptyArray(value)', () => {
+  assert.is(isEmptyArray([]), true);
+  assert.is(isEmptyArray([1]), false);
+  assert.is(isEmptyArray(['1']), false);
+  assert.is(isEmptyArray([true]), false);
+  assert.is(isEmptyArray([{}]), false);
 });
 
 test('isNumber(value)', () => {
