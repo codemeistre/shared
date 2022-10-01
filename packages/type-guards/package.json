@@ -26,6 +26,6 @@
   "homepage": "https://github.com/codemeistre/shared/tree/master/packages/type-guards",
   "devDependencies": {
     "typescript": "^4.6.3",
-    "vitest": "0.23.4"
+    "vitest": "^0.23.4"
   }
 }
