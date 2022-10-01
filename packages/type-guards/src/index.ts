@@ -63,3 +63,27 @@ export const isConstructor = (value: unknown): value is Constructor => typeof va
  * `false` otherwise.
  */
 export const isString = (value: unknown): value is string => typeof value === 'string';
+
+/**
+ * ***Drop-in replacement to `Promise.all`***
+ *
+ * Given an array of promises, wait for all promises to resolve and return its
+ * resolved value.
+ *
+ * If any promise have been rejected, throws the reason why it rejects of the
+ * first rejected one founds.
+ *
+ * @param promises
+ * @returns The resolved value of all promises in `promises`
+ * @throws {Error} The first rejected promise reason found on `promises`,
+ * i.e. `rejectedPromise.reason`
+ */
+export const awaitAll = async <T>(promises: Array<T>): Promise<Awaited<T>[]> => {
+  const promisesResult = await Promise.allSettled(promises);
+  const allResolvedValues: Awaited<T>[] = [];
+  for (const promiseResult of promisesResult) {
+    if (promiseResult.status === 'rejected') throw promiseResult.reason;
+    allResolvedValues.push(promiseResult.value);
+  }
+  return allResolvedValues;
+};
