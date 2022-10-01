@@ -10,3 +10,4 @@ Available functions:
 - `isBoolean`
 - `isConstructor`
 - `isString`
+- `awaitAll`
