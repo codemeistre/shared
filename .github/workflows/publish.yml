@@ -14,6 +14,7 @@ jobs:
     env:
       PACKAGES_PATH: 'packages'
       HUSKY: 0
+      CI: true
 
     steps:
       - name: Checkout repository
@@ -24,11 +25,13 @@ jobs:
       - id: manifest
         run: echo "::set-output name=path::$( git diff-tree --relative="${PACKAGES_PATH}/" --no-commit-id --name-only -r ${{ github.sha }} | grep -m1 -E '/package.json$' )"
 
-      - name: Set up Node.js
-        uses: actions/setup-node@master
+      - name: Use node16
+        uses: actions/setup-node@v3
         with:
-          node-version: 12.x
+          node-version: 16
           registry-url: https://registry.npmjs.org/
+          cache: 'yarn'
+
       - name: "Publish only if package's name has '@codemeistre' scope"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
