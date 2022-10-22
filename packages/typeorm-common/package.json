@@ -1,6 +1,6 @@
 {
   "name": "@codemeistre/typeorm-common",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Common TypeORM integrations.",
   "author": "CodeMeistre",
   "maintainers": [
@@ -10,6 +10,7 @@
     "Micael Levi Lima Cavalcante <mllc@icomp.ufam.edu.br>"
   ],
   "license": "MIT",
+  "main": "lib/index",
   "types": "lib/index.d.ts",
   "files": [
     "lib/**"
