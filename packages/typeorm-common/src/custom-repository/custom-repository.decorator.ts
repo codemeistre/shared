@@ -1,6 +1,7 @@
 import { SetMetadata } from '@nestjs/common';
 
-export const REGISTER_CUSTOM_REPOSITORY_METADATA = 'CUSTOM_REPOSITORY_METADATA';
+export const REGISTER_CUSTOM_REPOSITORY_METADATA =
+  'codemeistre/typeorm-common:CUSTOM_REPOSITORY_METADATA';
 
 /**
  * Register the metadata of the given Entity for later injection of its custom
