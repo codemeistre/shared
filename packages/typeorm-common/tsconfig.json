@@ -5,6 +5,7 @@
     "target": "ES2022",
     "removeComments": false,
     "declaration": true,
+    "rootDir": "src",
     "outDir": "./lib",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
