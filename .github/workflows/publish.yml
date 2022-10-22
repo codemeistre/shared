@@ -43,6 +43,7 @@ jobs:
           [[ "$package_name" =~ ^@codemeistre/ ]] || exit 1
 
           yarn install --frozen-lock-file
+          yarn build
 
           echo "@codemeistre:registry=https://registry.npmjs.org/" > ~/.npmrc
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" >> ~/.npmrc
