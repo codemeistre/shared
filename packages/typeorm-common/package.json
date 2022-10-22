@@ -27,9 +27,9 @@
   },
   "homepage": "https://github.com/codemeistre/shared/tree/master/packages/typeorm-common",
   "dependencies": {
-    "@nestjs/common": "^9.1.5",
-    "@nestjs/core": "^9.1.5",
-    "@nestjs/typeorm": "^9.0.1",
+    "@nestjs/common": "9.1.5",
+    "@nestjs/core": "9.1.5",
+    "@nestjs/typeorm": "9.0.1",
     "typeorm": "0.3.10"
   },
   "devDependencies": {
