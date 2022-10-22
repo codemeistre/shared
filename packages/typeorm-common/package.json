@@ -1,0 +1,38 @@
+{
+  "name": "@codemeistre/typeorm-common",
+  "version": "1.0.0",
+  "description": "Common TypeORM integrations.",
+  "author": "CodeMeistre",
+  "maintainers": [
+    "Élrik Souza Silva <elrik.souza@icomp.ufam.edu.br>",
+    "David Braga Fernandes de Oliveira <david@icomp.ufam.edu.br>",
+    "Francisco Oliveira da Silva Filho <francisco.filho@icomp.ufam.edu.br>",
+    "Micael Levi Lima Cavalcante <mllc@icomp.ufam.edu.br>"
+  ],
+  "license": "MIT",
+  "types": "@types/**",
+  "files": [
+    "lib/**"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codemeistre/shared.git",
+    "directory": "packages/typeorm-common"
+  },
+  "bugs": {
+    "url": "https://github.com/codemeistre/shared/issues"
+  },
+  "homepage": "https://github.com/codemeistre/shared/tree/master/packages/typeorm-common",
+  "dependencies": {
+    "@nestjs/common": "^9.1.5",
+    "@nestjs/core": "^9.1.5",
+    "@nestjs/typeorm": "^9.0.1",
+    "typeorm": "^0.3.10"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
