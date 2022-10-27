@@ -3,6 +3,12 @@
   "version": "1.3.0",
   "description": "Common type guards for TypeScript projects.",
   "author": "Micael Levi Lima Cavalcante <mllc@icomp.ufam.edu.br>",
+  "maintainers": [
+    "Élrik Souza Silva <elrik.souza@icomp.ufam.edu.br>",
+    "David Braga Fernandes de Oliveira <david@icomp.ufam.edu.br>",
+    "Francisco Oliveira da Silva Filho <francisco.filho@icomp.ufam.edu.br>",
+    "Micael Levi Lima Cavalcante <mllc@icomp.ufam.edu.br>"
+  ],
   "license": "MIT",
   "main": "lib/index",
   "types": "lib/index.d.ts",
