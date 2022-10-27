@@ -6,6 +6,7 @@ Available functions:
 - `isUndefined`
 - `isNullOrUndefined`
 - `isEmptyArray`
+- `isEmptyObject`
 - `isNumber`
 - `isBoolean`
 - `isConstructor`

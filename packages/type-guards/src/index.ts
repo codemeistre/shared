@@ -27,11 +27,20 @@ export const isNullOrUndefined = <T>(value: T | null | undefined): value is null
   isNull(value) || isUndefined(value);
 
 /**
- *
  * @param value
- * @returns `true` if the `value` is an empty array, i.e., `value.length === 0`. `false` otherwise
+ * @returns `true` if `value` is an empty array, i.e., `value.length === 0`. `false` otherwise
  */
 export const isEmptyArray = <T extends Array<unknown>>(value: T): boolean => value.length === 0;
+
+/**
+ * @param value
+ * @returns `true` if `value` has no keys. `false` otherwise
+ */
+export const isEmptyObject = <T extends Record<string | number | symbol, unknown>>(
+  value: T,
+): boolean =>
+  Object.getOwnPropertyNames(value).length === 0 &&
+  Object.getOwnPropertySymbols(value).length === 0;
 
 /**
  * Following https://nodejs.org/api/util.html#util_util_isnumber_object
