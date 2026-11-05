@@ -33,7 +33,7 @@
   "dependencies": {
     "fast-json-parse": "1.0.3",
     "minimist": "1.2.8",
-    "pump": "3.0.0",
+    "pump": "3.0.4",
     "split2": "4.2.0",
     "through2": "4.0.2"
   }
